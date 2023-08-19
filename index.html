@@ -23,11 +23,10 @@
     <header class="header">
       <div class="main-header container">
         <nav class="main-nav">
-          <!--Logo-->
           <a class="logo link" href="./index.html">
             Web<span class="logo-web">Studio</span></a
           >
-          <!--Panel Navigation-->
+
           <ul class="navigation-panel list">
             <li class="nav-panel-item">
               <a class="nav-link current link" href="./index.html">Studio</a>
@@ -55,6 +54,16 @@
             </li>
           </ul>
         </address>
+        <!-- Mobile-button -->
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="icon-menu-burger" width="32" height="22">
+            <use href="./images/icons.svg#mobile-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -133,7 +142,11 @@
           <ul class="list-what-are-we-doing list">
             <li class="li-wawd">
               <img
-                src="./images/whatarewedoing/image1/laptop.jpg"
+                srcset="
+                  ./images/whatarewedoing/img-1.jpg    1x,
+                  ./images/whatarewedoing/img-1@2x.jpg 2x
+                "
+                src="./images/whatarewedoing/img-1.jpg"
                 alt="laptop"
                 width="360"
                 height="300"
@@ -141,7 +154,11 @@
             </li>
             <li class="li-wawd">
               <img
-                src="./images/whatarewedoing/image2/telephone.jpg"
+                srcset="
+                  ./images/whatarewedoing/img-2.jpg    1x,
+                  ./images/whatarewedoing/img-2@2x.jpg 2x
+                "
+                src="./images/whatarewedoing/img-2.jpg"
                 alt="telephone"
                 width="360"
                 height="300"
@@ -149,7 +166,11 @@
             </li>
             <li class="li-wawd">
               <img
-                src="./images/whatarewedoing/image3/Rectangle71.jpg"
+                srcset="
+                  ./images/whatarewedoing/img-3.jpg    1x,
+                  ./images/whatarewedoing/img-3@2x.jpg 2x
+                "
+                src="./images/whatarewedoing/img-3.jpg"
                 alt="laptop and telephone"
                 width="360"
                 height="300"
@@ -165,7 +186,11 @@
           <ul class="list-our-team list">
             <li class="li-our-team">
               <img
-                src="./images/aboutus/image1/img.jpg"
+                srcset="
+                  ./images/aboutus/img-1.jpg    1x,
+                  ./images/aboutus/img-1@2x.jpg 2x
+                "
+                src="./images/aboutus/img-1.jpg"
                 alt="Mark Guero"
                 width="264"
                 height="260"
@@ -207,7 +232,11 @@
             </li>
             <li class="li-our-team">
               <img
-                src="./images/aboutus/image2/img2.jpg"
+                srcset="
+                  ./images/aboutus/img-2.jpg    1x,
+                  ./images/aboutus/img-2@2x.jpg 2x
+                "
+                src="./images/aboutus/img-2.jpg"
                 alt="Tom Ford"
                 width="264"
                 height="260"
@@ -250,7 +279,11 @@
 
             <li class="li-our-team">
               <img
-                src="./images/aboutus/image3/img3.jpg"
+                srcset="
+                  ./images/aboutus/img-3.jpg    1x,
+                  ./images/aboutus/img-3@2x.jpg 2x
+                "
+                src="./images/aboutus/img-3.jpg"
                 alt="Camila Garcia"
                 width="264"
                 height="260"
@@ -293,7 +326,11 @@
 
             <li class="li-our-team">
               <img
-                src="./images/aboutus/image4/img4.jpg"
+                srcset="
+                  ./images/aboutus/img-4.jpg    1x,
+                  ./images/aboutus/img-4@2x.jpg 2x
+                "
+                src="./images/aboutus/img-4.jpg"
                 alt="Daniel Wilson"
                 width="264"
                 height="260"
@@ -543,6 +580,85 @@
         </form>
       </div>
     </div>
+
+    <!-- Mobile-Menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle-close js-close-menu">
+        <svg width="8" height="8">
+          <use href="./images/icons.svg#mobile-menu-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu-list list">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="./index.html">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="#">Contacts</a>
+        </li>
+      </ul>
+
+      <address class="mobile-menu-adress">
+        <ul class="mobile-menu-contact-information list">
+          <li class="mobile-menu-contact-item">
+            <a class="mobile-menu-contact-link link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="mobile-menu-contact-item">
+            <a
+              class="mobile-menu-contact-link link"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+      </address>
+      <ul class="mobile-menu-social-list">
+        <li class="mobile-menu-social-item">
+          <a href="#" class="mobile-menu-social-link">
+            <svg class="icons-our-team" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-menu-social-item">
+          <a href="#" class="mobile-menu-social-link">
+            <svg class="icons-our-team" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-menu-social-item">
+          <a href="#" class="mobile-menu-social-link">
+            <svg class="icons-our-team" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-menu-social-item">
+          <a href="#" class="mobile-menu-social-link">
+            <svg class="icons-our-team" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Modal-Window-Scripr -->
     <script src="./js/modal.js"></script>
+
+    <!-- Mobile-Menu-Script -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

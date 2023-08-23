@@ -574,7 +574,7 @@ body {
 @media only screen and (min-width: 768px) {
   .list-our-team {
     column-gap: 24px;
-    row-gap: 66px;
+    row-gap: 64px;
   }
 }
 
@@ -716,8 +716,7 @@ body {
     gap: 24px;
   }
 }
-
-.customers-item {
+what-are .customers-item {
   width: calc((100% - 16) / 2);
 }
 
@@ -1506,7 +1505,6 @@ input[type="checkbox"]:checked ~ .checkbox-label > .custom-checkbox {
 }
 
 .mobile-menu-list {
-  /* margin-bottom: 284px; */
   margin-bottom: auto;
 }
 
@@ -1531,8 +1529,7 @@ input[type="checkbox"]:checked ~ .checkbox-label > .custom-checkbox {
 .mobile-menu-adress {
   margin-bottom: 48px;
 }
-.mobile-menu-contact-information {
-}
+
 .mobile-menu-contact-item:not(:last-child) {
   margin-bottom: 40px;
 }
